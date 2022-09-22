@@ -1,6 +1,5 @@
 #include <QtCore/QCoreApplication>
 
-
 #include "bank.h"
 
 int main(int argc, char *argv[])

@@ -15,4 +15,6 @@ protected:
 public:
 	Bank(QObject *parent, QString name);
 	~Bank();
+	void bankWorking();
+	void openBankAccount();
 };

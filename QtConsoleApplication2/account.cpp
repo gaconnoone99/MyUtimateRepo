@@ -10,13 +10,13 @@ account::~account()
 
 void account::openAccount()
 {
-	qInfo() << "Vui long nhap ten";
+	qInfo() << "Full Name";
 	
 	QTextStream s(stdin);
 	s.flush();
 	s.skipWhiteSpace();
 	ac.accountName = s.readLine();
-	qInfo() << "Vui long nhap mat khau";
+	qInfo() << "Password";
 	s.skipWhiteSpace();
 	ac.accountPassword = s.readLine();
 	ac.accountBalance = 0;

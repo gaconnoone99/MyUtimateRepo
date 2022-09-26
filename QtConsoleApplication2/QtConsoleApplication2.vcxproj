@@ -86,11 +86,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="account.cpp" />
-    <ClCompile Include="bank.cpp" />
     <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="bank.h" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="account.h" />

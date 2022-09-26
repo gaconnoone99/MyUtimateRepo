@@ -8,6 +8,7 @@
 struct accounInfo
 {
 	QString accountName;
+	QString accountPassword;
 	qint64 accountBalance;
 };
 

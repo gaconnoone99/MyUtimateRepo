@@ -21,6 +21,11 @@ void Bank::bankWorking()
         qInfo() << "Open account";
         openBankAccount();
     }
+
+    if (x == 2) {
+        qInfo() << "Open account";
+        openBankAccount();
+    }
 }
 
 void Bank::openBankAccount()

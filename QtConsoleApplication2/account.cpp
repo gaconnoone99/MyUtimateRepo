@@ -6,8 +6,9 @@ void account::writeCredentialData()
 
 	QFile file(fileName);
 	if (file.open(QIODevice::WriteOnly)) {
-		QByteArray data(ac.accountName.toLocal8Bit());
-		data.append(ac.accountPassword.toLocal8Bit());
+		QByteArray data(ac.accountName.toLocal8Bit() + "\r\n");
+		data.append(ac.accountPassword.toLocal8Bit() + "\r\n");
+		data.append(ac.accountBalance);
 		qInfo() << "----- Writting data -----";
 		file.write(data);
 		qInfo() << "----- Done -----";
@@ -44,5 +45,33 @@ void account::openAccount()
 
 void account::viewDetail()
 {
-	qInfo() << "Account Name: " << ac.accountName << Qt::endl << "Account Pass: " << ac.accountPassword << Qt::endl << "Balance: " << ac.accountBalance;
-} 
+	QString fileName = "cre.txt";
+
+	QFile file(fileName);
+	if (file.open(QIODevice::ReadOnly)) {
+		if (!file.isReadable()) {
+			qInfo() << "Cannot read";
+			return;
+		}
+
+		QTextStream stream(&file);
+		stream.seek(0);
+
+		while (!stream.atEnd())
+		{
+			qInfo() << "*** " << stream.readLine() << " ***";
+		}
+	}
+	else
+	{
+		qInfo() << file.errorString();
+	}
+}
+void account::deposit()
+{
+}
+
+void account::withDraw()
+{
+}
+

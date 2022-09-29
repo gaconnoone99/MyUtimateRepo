@@ -30,4 +30,6 @@ public:
 
 	void openAccount();
 	void viewDetail();
+	void deposit();
+	void withDraw();
 };

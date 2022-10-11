@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtConsoleApplication2", "QtConsoleApplication2\QtConsoleApplication2.vcxproj", "{84364892-AA16-4288-ABB2-4C49F15ABB83}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtConsoleApplication1", "QtConsoleApplication1\QtConsoleApplication1.vcxproj", "{8585FC78-5B9F-4111-AB4B-4FF62476FE5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -15,6 +17,10 @@ Global
 		{84364892-AA16-4288-ABB2-4C49F15ABB83}.Debug|x64.Build.0 = Debug|x64
 		{84364892-AA16-4288-ABB2-4C49F15ABB83}.Release|x64.ActiveCfg = Release|x64
 		{84364892-AA16-4288-ABB2-4C49F15ABB83}.Release|x64.Build.0 = Release|x64
+		{8585FC78-5B9F-4111-AB4B-4FF62476FE5A}.Debug|x64.ActiveCfg = Debug|x64
+		{8585FC78-5B9F-4111-AB4B-4FF62476FE5A}.Debug|x64.Build.0 = Debug|x64
+		{8585FC78-5B9F-4111-AB4B-4FF62476FE5A}.Release|x64.ActiveCfg = Release|x64
+		{8585FC78-5B9F-4111-AB4B-4FF62476FE5A}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

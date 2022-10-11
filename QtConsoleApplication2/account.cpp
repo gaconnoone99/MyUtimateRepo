@@ -69,9 +69,19 @@ void account::viewDetail()
 }
 void account::deposit()
 {
+	qInfo() << "-----" << "Input amount" << "-----";
+	QTextStream s(stdin);
+	s.flush();
+	s.skipWhiteSpace();
+	ac.accountBalance += s.readLine().toInt();
 }
 
 void account::withDraw()
 {
+	qInfo() << "-----" << "Input amount" << "-----";
+	QTextStream s(stdin);
+	s.flush();
+	s.skipWhiteSpace();
+	ac.accountBalance -= s.readLine().toInt();
 }
 
